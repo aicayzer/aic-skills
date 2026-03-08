@@ -31,4 +31,5 @@ $ARGUMENTS
 - No H1 heading — the filename is the title
 - No emojis
 - If the input mentions a project, always set the `project` property AND link to it in the body
-- Keep the log concise. If the content is substantial enough to be a note or zettel, say so — but still create the log
+- A log can be substantive — length and analytical depth don't disqualify it. It only stops being a log when the content is a freestanding idea no longer anchored to a moment
+- Link to things the log is **about** (projects, tools, people, concepts) — not to wiki pages or other reference documentation

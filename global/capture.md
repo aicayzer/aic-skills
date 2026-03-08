@@ -17,7 +17,7 @@ $ARGUMENTS
 
 3. **Build frontmatter.** Set `type` appropriately:
    - `note` for general notes
-   - `zettel` for distilled ideas or arguments
+   - `quick-note` for standalone ideas or thoughts
    - `artifact` for working documents within a project
    - Include `status: inbox` only if filing to Inbox
    - Include `tags` if relevant topics are apparent
