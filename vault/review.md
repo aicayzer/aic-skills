@@ -14,11 +14,11 @@ Optional filter: `inbox`, `later`, `projects`, or blank for all.
 
    **Inbox items** — scan `~/aic-vault/Inbox/` for files. Read their frontmatter to get type, status, and tags. These are untriaged items waiting for a routing decision.
 
-   **Later items** — search across `~/aic-vault/Projects/` for `_index.md` files where `status: later`. These are deferred projects worth reconsidering.
+   **Later items** — search across `~/aic-vault/Projects/` for `_project.md` files where `status: later`. These are deferred projects worth reconsidering.
 
-   **Active projects** — search `~/aic-vault/Projects/` for `_index.md` files where `status: active`. Show their current state briefly.
+   **Active projects** — search `~/aic-vault/Projects/` for `_project.md` files where `status: active`. Show their current state briefly.
 
-   **Backlog items** — search `~/aic-vault/Projects/` for `_index.md` files where `status: backlog`. These are acknowledged but not started.
+   **Backlog items** — search `~/aic-vault/Projects/` for `_project.md` files where `status: backlog`. These are acknowledged but not started.
 
 3. **Present the triage list.** For each category with items, show:
    - The note title (filename or alias)

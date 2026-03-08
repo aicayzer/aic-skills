@@ -18,7 +18,7 @@ Examples:
 
 2. **Validate the status.** Must be one of: `active`, `later`, `backlog`, `done`, `cancelled`, `archive`. If the input contains an invalid status, reject it and list the valid options.
 
-3. **Update `_index.md`.** Change the `status` property in the frontmatter to the new value. Do not modify anything else.
+3. **Update `_project.md`.** Change the `status` property in the frontmatter to the new value. Do not modify anything else.
 
 4. **Create a log file.** In `~/aic-vault/Calendar/Logs/`, create a log recording the status change:
    - Filename: `YYYY-MM-DD HHMM project-name status changed to new-status.md`

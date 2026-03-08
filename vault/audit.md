@@ -15,10 +15,10 @@ Optional scope: `projects`, `wiki`, `naming`, `tags`, `inbox`, `structure`, or b
 2. **Run checks by area:**
 
    **Projects** — scan `~/aic-vault/Projects/` for:
-   - Every project folder has an `_index.md`
-   - Every `_index.md` has `type: project`, a `status` value, and `aliases`
+   - Every project folder has an `_project.md`
+   - Every `_project.md` has `type: project`, a `status` value, and `aliases`
    - Folder names are kebab-case with two-digit numeric prefixes
-   - No project notes named anything other than `_index.md`
+   - No project notes named anything other than `_project.md`
    - Subfolder numbering uses two-digit zero-padded prefixes (01-, 02-, 03-)
 
    **Wiki** — scan `~/aic-vault/Wiki/` for:
