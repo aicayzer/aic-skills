@@ -39,6 +39,6 @@ The first word (kebab-case) is the folder slug. Everything after it is the human
 - No H1 heading — filename is the title (and `_index.md` uses the alias as its display name)
 - Project folders use kebab-case — the only place in the vault where kebab-case is used
 - Two-digit zero-padded prefix for the project number
-- Subfolders within projects use single-digit numbering (`1-`, `2-`, `3-`)
+- Subfolders within projects use two-digit zero-padded numbering (`01-`, `02-`, `03-`)
 - Don't create subfolders unless the user specifies them — start with just `_index.md`
 - Numbers never get reused or reshuffled

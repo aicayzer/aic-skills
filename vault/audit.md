@@ -19,7 +19,7 @@ Optional scope: `projects`, `wiki`, `naming`, `tags`, `inbox`, `structure`, or b
    - Every `_index.md` has `type: project`, a `status` value, and `aliases`
    - Folder names are kebab-case with two-digit numeric prefixes
    - No project notes named anything other than `_index.md`
-   - Subfolder numbering uses single digits (1-, 2-, 3-)
+   - Subfolder numbering uses two-digit zero-padded prefixes (01-, 02-, 03-)
 
    **Wiki** — scan `~/aic-vault/Wiki/` for:
    - Every wiki page has `type: wiki` in frontmatter

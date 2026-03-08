@@ -26,6 +26,7 @@ The install script symlinks skills into `~/.claude/commands/` (global) and `~/ai
 - **`/status`** — update a project's status and log the change
 - **`/system`** — orchestrate wiki updates with change tracking
 - **`/review`** — surface items needing attention across the vault
+- **`/audit`** — run a convention audit across the vault and system
 
 ## Adding a New Skill
 
