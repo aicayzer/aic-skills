@@ -20,7 +20,7 @@ $ARGUMENTS
 
 4. **Create a log.** In `~/aic-vault/Calendar/Logs/`, record what was changed:
    - Filename: `YYYY-MM-DD HHMM description of wiki change.md`
-   - Frontmatter: `type: log`, `source: claude-chat`, relevant `tags`, `project` if applicable, and `seen: false`
+   - Frontmatter: `type: log`, `source: claude-chat`, relevant `tags`, `project` if applicable, and `seen: "false"`
    - Body: what changed, which pages were updated, and why. Internal links to the wiki pages and project if relevant. Link to things the log is about — not to wiki pages as backreferences.
 
 5. **Update the project note** if this change is part of an active project. Add a brief mention in the project note's current state or key decisions section, linking to the log.

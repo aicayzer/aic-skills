@@ -16,7 +16,7 @@ $ARGUMENTS
      - tag-one
      - tag-two
    ```
-   - Always set `type: note`, `status: inbox`, and `seen: false`
+   - Always set `type: note`, `status: inbox`, and `seen: "false"`
    - Extract tags from any hashtags in the input (e.g. `#ai` becomes `ai`). If no hashtags, infer a few relevant topic tags. Zero tags is also fine.
 
 3. **Write the body.** Use the input as-is or lightly clean it up. Add internal links (`[[Note Name]]`) where entities are mentioned that might have vault notes.

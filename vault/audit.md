@@ -47,7 +47,7 @@ Optional scope: `projects`, `wiki`, `naming`, `tags`, `inbox`, `structure`, or b
    - Expected folders exist: Inbox, Projects, Library, Calendar, Wiki, Archive, System, Drafts
    - No unexpected top-level folders
    - Archive has Wiki/, Notes/, Calendar/ subfolders
-   - System has Templates/, Attachments/, Bases/ subfolders
+   - System has Templates/, Attachments/ subfolders
 
 3. **Report findings.** Group by area. For each issue found:
    - State what's wrong

@@ -22,7 +22,7 @@ Examples:
 
 4. **Create a log file.** In `~/aic-vault/Calendar/Logs/`, create a log recording the status change:
    - Filename: `YYYY-MM-DD HHMM project-name status changed to new-status.md`
-   - Frontmatter: `type: log`, `source: claude-chat`, `project: "[[Project Name]]"`, relevant tags, and `seen: false`
+   - Frontmatter: `type: log`, `source: claude-chat`, `project: "[[Project Name]]"`, relevant tags, and `seen: "false"`
    - Body: brief note of the change, the reason if provided, and an internal link to the project
 
 5. **Confirm** what was changed — the project path, old status, new status, and the log file created.

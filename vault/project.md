@@ -25,11 +25,11 @@ The first word (kebab-case) is the folder slug. Everything after it is the human
    status: active
    tags: []
    aliases:
-     - Human Readable Name
-   seen: false
+     - Human Readable Name (#NN)
+   seen: "false"
    ---
    ```
-   Follow with an `## Overview` section containing the description from the input. Add any relevant internal links.
+   The alias uses the format `Name (#NN)` where NN is the project number. Follow with an `## Overview` section containing the description from the input. Add any relevant internal links.
 
 5. **Confirm what was created** — full path to the folder and `_index.md`, the project number, the alias, and the status.
 
