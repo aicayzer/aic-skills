@@ -28,6 +28,22 @@ mkdir -p "$GLOBAL_DEST"
 mkdir -p "$VAULT_DEST"
 mkdir -p "$SKILLS_DEST"
 
+# Install global CLAUDE.md with machine identity header
+HOSTNAME="$(hostname -s 2>/dev/null || hostname)"
+CLAUDE_MD_SRC="$SCRIPT_DIR/user-claude.md"
+CLAUDE_MD_DEST="$HOME/.claude/CLAUDE.md"
+
+if [ -f "$CLAUDE_MD_SRC" ]; then
+    # Prepend machine identity, then the shared content
+    {
+        echo "This machine is \`$HOSTNAME\`."
+        echo ""
+        cat "$CLAUDE_MD_SRC"
+    } > "$CLAUDE_MD_DEST"
+    echo "Installed CLAUDE.md for $HOSTNAME"
+fi
+
+echo ""
 echo "Installing skills from $SCRIPT_DIR"
 echo ""
 
