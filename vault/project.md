@@ -28,7 +28,7 @@ The first word (kebab-case) is the folder slug. Everything after it is the human
    seen: "false"
    ---
    ```
-   The alias uses the format `Name (#NN)` where NN is the project number. Add `tags` only if relevant topics are clear from the input — don't include empty tags. Follow with an `## Overview` section containing the description from the input. Add any relevant internal links.
+   The alias uses the format `Name (#NN)` where NN is the project number. Add `tags` only if relevant topics are clear from the input — don't include empty tags. Follow with an `## Overview` section containing the description from the input. Add any relevant internal links. If the project has a repo or external URL, link it using `file://` markdown links (e.g. `[my-app](file:///Users/aicayzer/aic-local/Dev/Apps/my-app/)`) or standard URL links (e.g. `[GitHub](https://...)`). Never use backtick-wrapped paths — backticks are for inline code, not navigation.
 
 5. **Confirm what was created** — full path to the folder and `_project.md`, the project number, the alias, and the status.
 
