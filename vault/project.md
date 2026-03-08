@@ -12,7 +12,7 @@ The first word (kebab-case) is the folder slug. Everything after it is the human
 
 ## Instructions
 
-1. **Check for existing projects.** List the folders in `~/aic-vault/Projects/` and check whether an existing project already covers this work. If one does, suggest filing into it instead and stop — don't create a duplicate.
+1. **Check for existing projects.** List the folders in `~/aic-vault/Projects/` and check whether an existing project already covers this work — including as a new phase, subfolder, or sub-project of something that already exists. If so, suggest filing into it instead and stop — don't create a duplicate or a sibling project for what's really the next step in an existing one.
 
 2. **Detect the next available number.** Scan existing project folders for two-digit prefixes (`01-`, `02-`, etc.) and pick the next sequential number. Gaps are normal — use the next number after the highest existing one.
 
@@ -23,13 +23,12 @@ The first word (kebab-case) is the folder slug. Everything after it is the human
    ---
    type: project
    status: active
-   tags: []
    aliases:
      - Human Readable Name (#NN)
    seen: "false"
    ---
    ```
-   The alias uses the format `Name (#NN)` where NN is the project number. Follow with an `## Overview` section containing the description from the input. Add any relevant internal links.
+   The alias uses the format `Name (#NN)` where NN is the project number. Add `tags` only if relevant topics are clear from the input — don't include empty tags. Follow with an `## Overview` section containing the description from the input. Add any relevant internal links.
 
 5. **Confirm what was created** — full path to the folder and `_project.md`, the project number, the alias, and the status.
 

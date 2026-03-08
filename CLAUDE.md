@@ -4,16 +4,21 @@ This is `aic-skills` — a repo of Claude Code slash commands (skills) that enco
 
 A skill is a markdown file in `.claude/commands/`. When a user types `/skill-name`, Claude Code reads the file and uses it as a prompt. The `$ARGUMENTS` placeholder captures whatever the user types after the command.
 
-Skills in `global/` get symlinked to `~/.claude/commands/` (available in every Claude session). Skills in `vault/` get symlinked to `~/aic-vault/.claude/commands/` (available only in vault sessions).
+All skills are symlinked globally to `~/.claude/commands/` so they are available in every Claude Code session regardless of working directory. Vault skills are also symlinked to `~/aic-vault/.claude/commands/` for redundancy in vault sessions.
+
+The repo uses `global/`, `vault/`, and `dev/` folders for organisational purposes only — the folder a skill lives in has no effect on availability.
+
+Single-file skills (`.md`) are symlinked to `~/.claude/commands/`. Folder-based skills (containing `SKILL.md` plus supporting files) are symlinked to `~/.claude/skills/`.
 
 Run `./install.sh` to create the symlinks.
 
 ## File Structure
 
 ```
-global/          # Skills available everywhere
-vault/           # Skills available in vault sessions
-install.sh       # Symlinks skills into the right locations
+global/          # General-purpose skills
+vault/           # Vault and Obsidian workflow skills
+dev/             # Development-context skills
+install.sh       # Symlinks all skills globally
 ```
 
 ## Rules for Writing Skills

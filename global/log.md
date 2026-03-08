@@ -22,9 +22,11 @@ $ARGUMENTS
 
 4. **Write the body.** Use the input to write concise log content. Link to things the log is about — projects, tools, people, concepts. Do not backlink wiki pages. Internal links use `[[Note Name]]` syntax.
 
-5. **Create the file** at `~/aic-vault/Calendar/Logs/YYYY-MM-DD HHMM description.md`.
+5. **Check for related logs.** Search `~/aic-vault/Calendar/Logs/` for recent logs on the same topic or project. If relevant recent logs exist, add internal links to them in the body (e.g. "Continues from [[2026-03-08 1322 previous log]]"). This builds a chronological thread without requiring the reader to search.
 
-6. **Confirm** what was created, including the full file path.
+6. **Create the file** at `~/aic-vault/Calendar/Logs/YYYY-MM-DD HHMM description.md`.
+
+7. **Confirm** what was created, including the full file path.
 
 ## Rules
 
