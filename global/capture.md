@@ -16,9 +16,10 @@ $ARGUMENTS
 2. **Derive a filename.** Natural language with spaces, descriptive. The filename is the title — no H1 heading.
 
 3. **Build frontmatter.** Set `type` appropriately:
-   - `note` for general notes
-   - `quick-note` for standalone ideas or thoughts
+   - `note` for substantive, authoritative content (analysis, research, records)
+   - `quick-note` for standalone ideas or thoughts (a freestanding idea not anchored to a moment)
    - `artifact` for working documents within a project
+   - Always include `seen: false`
    - Include `status: inbox` only if filing to Inbox
    - Include `tags` if relevant topics are apparent
    - Include `project` property (as an internal link) if filing into a project folder

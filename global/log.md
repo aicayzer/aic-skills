@@ -12,14 +12,15 @@ $ARGUMENTS
 
 2. **Derive the filename.** Format: `YYYY-MM-DD HHMM description.md` where description is brief, lowercase, natural language — enough to identify the log at a glance. If a file already exists at that minute, append `-2` to the time (e.g. `1430-2`).
 
-3. **Build frontmatter.** Always include `type: log`. Only include other properties when they have values:
+3. **Build frontmatter.** Always include `type: log` and `seen: false`. Only include other properties when they have values:
    - `tags` — topic tags relevant to the content
    - `source` — if this is a Claude Code session, set `source: claude-chat`
    - `project` — if the log relates to a project, set as an internal link (e.g. `"[[Project Name]]"`)
    - `location` — if a location is mentioned or contextually obvious
    - `session` — if running in a Claude Code session and the session path is available
+   - `seen` — always `false` (the user hasn't read it yet)
 
-4. **Write the body.** Use the input to write concise log content. Link liberally — projects, tools, wiki pages, people, concepts. Internal links use `[[Note Name]]` syntax.
+4. **Write the body.** Use the input to write concise log content. Link to things the log is about — projects, tools, people, concepts. Do not backlink wiki pages. Internal links use `[[Note Name]]` syntax.
 
 5. **Create the file** at `~/aic-vault/Calendar/Logs/YYYY-MM-DD HHMM description.md`.
 

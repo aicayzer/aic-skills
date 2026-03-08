@@ -26,6 +26,7 @@ The first word (kebab-case) is the folder slug. Everything after it is the human
    tags: []
    aliases:
      - Human Readable Name
+   seen: false
    ---
    ```
    Follow with an `## Overview` section containing the description from the input. Add any relevant internal links.
