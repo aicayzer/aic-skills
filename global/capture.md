@@ -10,16 +10,16 @@ $ARGUMENTS
 
 1. **Decide where this belongs.** Apply these rules in order:
    - **Project context** — if the input relates to an active project (mentioned by name, or the current working context is a project), file it into that project's folder under `~/aic-vault/Projects/<project-folder>/`. Check existing project folders to find the right one.
-   - **Standalone idea or reference** — if it's a self-contained thought, concept, or reference not tied to a project, file it in `~/aic-vault/Library/`.
+   - **Freestanding reference material** — if it's reference material not tied to a project or a moment (e.g. "How email forwarding works", "Container runtime comparison"), file it in `~/aic-vault/Library/`. This is rare — most thoughts are logs.
    - **Unclear** — if you genuinely can't determine where it belongs, file it in `~/aic-vault/Inbox/` with `status: inbox`.
 
 2. **Derive a filename.** Natural language with spaces, descriptive. The filename is the title — no H1 heading.
 
 3. **Build frontmatter.** Set `type` appropriately:
    - `note` for substantive, authoritative content (analysis, research, records)
-   - `quick-note` for standalone ideas or thoughts (a freestanding idea not anchored to a moment)
+   - `quick-note` for freestanding reference material not anchored to a moment (rare — most thoughts are logs)
    - `artifact` for working documents within a project
-   - Always include `seen: "false"`
+   - Always include `seen: "no"`
    - Include `status: inbox` only if filing to Inbox
    - Include `tags` if relevant topics are apparent
    - Include `project` property (as an internal link) if filing into a project folder

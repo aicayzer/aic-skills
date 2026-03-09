@@ -12,7 +12,7 @@ $ARGUMENTS
 
 2. **Derive the filename.** Format: `YYYY-MM-DD HHMM description.md` where description is brief, lowercase, natural language — enough to identify the log at a glance. If a file already exists at that minute, append `-2` to the time (e.g. `1430-2`).
 
-3. **Build frontmatter.** Always include `type: log` and `seen: "false"`. Only include other properties when they have values:
+3. **Build frontmatter.** Always include `type: log` and `seen: "no"`. Only include other properties when they have values:
    - `tags` — topic tags relevant to the content
    - `source` — if this is a Claude Code session, set `source: claude-chat`
    - `project` — if the log relates to a project, set as an internal link (e.g. `"[[Project Name]]"`)

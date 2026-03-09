@@ -25,7 +25,7 @@ The first word (kebab-case) is the folder slug. Everything after it is the human
    status: active
    aliases:
      - Human Readable Name (#NN)
-   seen: "false"
+   seen: "no"
    ---
    ```
    The alias uses the format `Name (#NN)` where NN is the project number. Add `tags` only if relevant topics are clear from the input — don't include empty tags. Follow with an `## Overview` section containing the description from the input. Add any relevant internal links. If the project has a repo or external URL, link it using `file://` markdown links (e.g. `[my-app](file:///Users/aicayzer/aic-local/Dev/Apps/my-app/)`) or standard URL links (e.g. `[GitHub](https://...)`). Never use backtick-wrapped paths — backticks are for inline code, not navigation.

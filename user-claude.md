@@ -63,7 +63,7 @@ Key vault structure:
 
 Skills are slash commands managed in `~/Services/aic-skills/` (also on GitHub at `aicayzer/aic-skills`), symlinked via `install.sh`. Three categories:
 
-- **Global skills** (available everywhere): `/log`, `/park`, `/capture`
+- **Global skills** (available everywhere): `/log`, `/park`, `/capture`, `/guide`
 - **Vault skills** (vault sessions only): `/project`, `/status`, `/system`, `/review`, `/audit`, `/obsidian-cli`, `/obsidian-markdown`, `/obsidian-bases`, `/defuddle`, `/json-canvas`
 - **Dev skills** (global, for extension development): `/obsidian-plugin-dev`, `/raycast-extension-dev`
 
@@ -73,7 +73,7 @@ Skills are slash commands managed in `~/Services/aic-skills/` (also on GitHub at
 ## Vault Conventions
 
 - **Deletion** means moving to Obsidian's `.trash/` folder, not hard-deleting files.
-- **`seen` property.** Set `seen: "false"` (string, not boolean) on every note, log, or document you create. Set `seen: "true"` when the user has clearly engaged with the content.
+- **`seen` property.** Set `seen: "no"` on every note, log, or document you create. Set `seen: "yes"` when the user has clearly engaged with the content.
 - **Project aliases use `Name (#NN)` format.** Always include the project number in the alias. Link as `[[MCP Cleanup (#05)]]`.
 - **File linking.** Files inside the vault use `[[internal links]]`. Files outside the vault use markdown links with `file://` URLs: `[Display Name](file:///absolute/path)`. Web URLs use standard markdown links: `[Display Name](https://...)`. Never use backtick-wrapped paths as pseudo-links — backticks are for inline code, not navigation.
 - **Don't over-preserve.** Once a working document's content has been captured in its permanent home, delete the working document. Don't keep to-do lists after the to-dos are done.
