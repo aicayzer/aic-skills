@@ -23,6 +23,7 @@ If in doubt, just say what's on your mind. That always works.
 - **/log** -- Create a timestamped log entry in Calendar/Logs/. For things that happened, thoughts you had, decisions made.
 - **/park** -- Drop something into Inbox/ with zero friction. Use when you don't know where it belongs yet.
 - **/capture** -- Route content to the right place: project folder, Library, or Inbox.
+- **/email-management** -- Email landscape reference: accounts, access rules, Superhuman concepts, Apple Mail MCP conventions.
 
 ### Projects
 
