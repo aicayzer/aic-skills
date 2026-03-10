@@ -36,7 +36,7 @@ When working in `~/aic-vault/`, read `~/aic-vault/CLAUDE.md` for vault-specific 
 Key vault structure:
 - `Projects/` — project folders using `slug-HASH/` format (kebab-case slug, 5-char alphanumeric hash). Each has a project note named `Name HASH.md`. (Dev repos use `README.md`.)
 - `Calendar/Logs/` — individual log files (`YYYY-MM-DD HHMM description.md`).
-- `Library/` — completed projects kept for reference, in their `slug-HASH/` folders.
+- `Library/` — standalone notes not tied to a project. May contain project-originated material that retains a `project` frontmatter property for lineage.
 - `Inbox/` — unprocessed items.
 - `Wiki/` — system documentation (Standards/, Guides/).
 - `Meta/Templates/` — note templates.
