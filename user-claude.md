@@ -33,6 +33,8 @@ Infrastructure names always in backticks: `aic-atlas`, `aic-cloud`, `aic-vault`,
 
 When working in `~/aic-vault/`, read `~/aic-vault/CLAUDE.md` for vault-specific conventions — note types, properties, wiki structure, naming, content ownership. That document is the authority for vault work.
 
+**Prefer the Obsidian CLI** (`obsidian`) for vault operations — reading, creating, searching, and managing notes. It works through the running Obsidian instance, so changes are picked up by sync and plugins immediately. Use `/obsidian-cli` for the full command reference. Fall back to direct file operations only when Obsidian isn't running or for bulk/scripted work.
+
 Key vault structure:
 - `Projects/` — project folders using `slug-HASH/` format (kebab-case slug, 5-char alphanumeric hash). Each has a project note named `Name HASH.md`. (Dev repos use `README.md`.)
 - `Calendar/Logs/` — individual log files (`YYYY-MM-DD HHMM description.md`).
