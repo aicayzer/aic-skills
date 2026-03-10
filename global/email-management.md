@@ -25,11 +25,6 @@ Three email addresses are accessible via the Apple Mail MCP on `aic-atlas`:
 - **Sending:** Only via msmtp on `aic-atlas` (not via Apple Mail MCP). From address: `ops.cyzr@icloud.com` (fallback) or `mail@ops.cyzr.me` (when propagation completes)
 - **Access:** Read-only via Apple Mail MCP
 
-### oblix.cyzr@gmail.com (NOT in Apple Mail)
-- **Purpose:** Oblix's dedicated email channel
-- **Access:** Gmail API only (not Apple Mail MCP). Managed entirely in NanoClaw's Gmail channel code
-- **Not relevant to this skill** — covered by Oblix's own security model
-
 
 ## Apple Mail MCP Rules
 
