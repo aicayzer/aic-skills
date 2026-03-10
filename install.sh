@@ -98,5 +98,23 @@ for item in "$DEV_SRC"/*; do
     fi
 done
 
+# Cleanup: remove symlinks in target dirs that point to files no longer in this repo
+echo "Cleaning stale symlinks..."
+for dest in "$GLOBAL_DEST" "$VAULT_DEST"; do
+    for link in "$dest"/*.md; do
+        [ -L "$link" ] || continue
+        target="$(readlink "$link")"
+        # Only clean up symlinks pointing into this repo
+        case "$target" in
+            "$SCRIPT_DIR"/*)
+                if [ ! -e "$target" ]; then
+                    rm "$link"
+                    echo "  removed stale: $(basename "$link") -> $dest/"
+                fi
+                ;;
+        esac
+    done
+done
+
 echo ""
 echo "Done. All skills installed."
