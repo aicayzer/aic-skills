@@ -4,7 +4,7 @@ Surface vault items that need attention.
 
 $ARGUMENTS
 
-Optional filter: `inbox`, `later`, `projects`, or blank for all.
+Optional filter: `inbox`, `later`, `projects`, `actions`, or blank for all.
 
 ## Instructions
 
@@ -14,14 +14,14 @@ Optional filter: `inbox`, `later`, `projects`, or blank for all.
 
    **Inbox items** — scan `~/aic-vault/Inbox/` for files. Read their frontmatter to get type, status, and tags. These are untriaged items waiting for a routing decision.
 
-   **Later items** — search across `~/aic-vault/Projects/` for `_project.md` files where `status: later`. These are deferred projects worth reconsidering.
+   **Later items** — search across `~/aic-vault/Projects/` for project notes (files with `type: project` in frontmatter) where `status: later`. These are deferred projects worth reconsidering.
 
-   **Active projects** — search `~/aic-vault/Projects/` for `_project.md` files where `status: active`. Show their current state briefly.
+   **Active projects** — search `~/aic-vault/Projects/` for project notes (files with `type: project` in frontmatter) where `status: active`. Show their current state briefly.
 
-   **Backlog items** — search `~/aic-vault/Projects/` for `_project.md` files where `status: backlog`. These are acknowledged but not started.
+   **Open actions** — grep across `~/aic-vault/` for `- [/]` (action items). Show each action's text, the source file, and how old the file is. Group by: project-affiliated (source file has a `project` property) vs freestanding. Flag any actions older than 30 days as stale.
 
 3. **Present the triage list.** For each category with items, show:
-   - The note title (filename or alias)
+   - The note title (filename)
    - The file path
    - A one-line summary from the content or frontmatter
    - How long it's been there (based on file creation or modification date)

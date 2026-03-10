@@ -1,4 +1,5 @@
----
+---aliases: [JXRSO]
+
 name: obsidian-markdown
 description: Create and edit Obsidian Flavored Markdown with internal links, embeds, callouts, properties, and other Obsidian-specific syntax. Use when working with .md files in Obsidian, or when the user mentions internal links, callouts, frontmatter, tags, embeds, or Obsidian notes.
 ---

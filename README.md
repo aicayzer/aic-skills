@@ -17,14 +17,14 @@ The install script symlinks skills into `~/.claude/commands/` (global) and `~/ai
 ### Global (available everywhere)
 
 - **`/log`** — create a timestamped log file in Calendar/Logs/
-- **`/park`** — send something to Inbox with zero friction
 - **`/capture`** — route content to the right destination based on context
+- **`/system-help`** — quick reference for the system and available skills
 
 ### Vault (available in vault sessions)
 
 - **`/project`** — scaffold a new numbered project in Projects/
 - **`/status`** — update a project's status and log the change
-- **`/system`** — orchestrate wiki updates with change tracking
+- **`/system-updates`** — orchestrate wiki updates with change tracking
 - **`/review`** — surface items needing attention across the vault
 - **`/audit`** — run a convention audit across the vault and system
 - **`/obsidian-cli`** — Obsidian CLI reference

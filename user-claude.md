@@ -13,14 +13,14 @@
 
 When creating or moving files, always include the full absolute path in your response so it's clickable. Format: `/Users/aicayzer/path/to/file.md`
 
-If a path contains spaces, wrap it in backticks so the terminal treats it as a single clickable link: `` `/Users/aicayzer/aic-vault/Projects/10-example/Some Note.md` ``
+If a path contains spaces, wrap it in single quotes so the terminal treats it as a single clickable link: `'/Users/aicayzer/aic-vault/Projects/acme-app-R7K2M/Some Note.md'`
 
 
 ## The System
 
 The personal digital ecosystem is called **aic-system**. Key locations:
 
-- **`~/aic-vault/`** — Obsidian vault. Notes, projects, wiki, logs. Agent instructions at `~/aic-vault/Wiki/CLAUDE.md`.
+- **`~/aic-vault/`** — Obsidian vault. Notes, projects, wiki, logs. Agent instructions at `~/aic-vault/CLAUDE.md`.
 - **`~/aic-local/Dev/`** — development repos. Organised into subdirectories: Apps/, Extensions/, Infrastructure/, Scratch/, Archive/.
 - **`~/Services/`** — infrastructure repos: `aic-shell` (shell config), `aic-skills` (Claude Code skills), MCPs, and others.
 - **`~/aic-cloud/`** — active file system (iCloud). Areas, Resources, Stash, Archive.
@@ -31,15 +31,15 @@ Infrastructure names always in backticks: `aic-atlas`, `aic-cloud`, `aic-vault`,
 
 ### Vault
 
-When working in `~/aic-vault/`, read `~/aic-vault/Wiki/CLAUDE.md` for vault-specific conventions — note types, properties, wiki structure, naming, content ownership. That document is the authority for vault work.
+When working in `~/aic-vault/`, read `~/aic-vault/CLAUDE.md` for vault-specific conventions — note types, properties, wiki structure, naming, content ownership. That document is the authority for vault work.
 
 Key vault structure:
-- `Projects/` — numbered project folders (two-digit prefix, kebab-case). Each has `_project.md` as the project note. (`_project.md` is vault-only; Dev repos use `README.md`.)
+- `Projects/` — project folders using `slug-HASH/` format (kebab-case slug, 5-char alphanumeric hash). Each has a project note named `Name HASH.md`. (Dev repos use `README.md`.)
 - `Calendar/Logs/` — individual log files (`YYYY-MM-DD HHMM description.md`).
-- `Library/` — standalone notes not tied to a project.
+- `Library/` — completed projects kept for reference, in their `slug-HASH/` folders.
 - `Inbox/` — unprocessed items.
-- `Wiki/` — system documentation (Standards/, Workflows/, Guides/).
-- `System/Templates/` — note templates.
+- `Wiki/` — system documentation (Standards/, Guides/).
+- `Meta/Templates/` — note templates.
 
 ### Development
 
@@ -63,18 +63,17 @@ Key vault structure:
 
 Skills are slash commands managed in `~/Services/aic-skills/` (also on GitHub at `aicayzer/aic-skills`), symlinked via `install.sh`. Three categories:
 
-- **Global skills** (available everywhere): `/log`, `/park`, `/capture`, `/guide`
-- **Vault skills** (vault sessions only): `/project`, `/status`, `/system`, `/review`, `/audit`, `/obsidian-cli`, `/obsidian-markdown`, `/obsidian-bases`, `/defuddle`, `/json-canvas`
+- **Global skills** (available everywhere): `/log`, `/capture`, `/prepare`, `/system-help`
+- **Vault skills** (vault sessions only): `/project`, `/status`, `/system-updates`, `/review`, `/audit`, `/obsidian-cli`, `/obsidian-markdown`, `/obsidian-bases`, `/defuddle`, `/json-canvas`
 - **Dev skills** (global, for extension development): `/obsidian-plugin-dev`, `/raycast-extension-dev`
 
-**Always check available skills before performing vault workflows.** If a skill exists for the requested task, use it. Skills encode the conventions and produce consistent results. The wiki Workflows/ section ([[Projects]], [[Logs]]) documents the conceptual framework; skills are the procedural layer that implements it.
+**Always check available skills before performing vault workflows.** If a skill exists for the requested task, use it. Skills encode the conventions and produce consistent results.
 
 
 ## Vault Conventions
 
-- **Deletion** means moving to Obsidian's `.trash/` folder, not hard-deleting files.
-- **`seen` property.** Set `seen: "no"` on every note, log, or document you create. Set `seen: "yes"` when the user has clearly engaged with the content.
-- **Project aliases use `Name (#NN)` format.** Always include the project number in the alias. Link as `[[MCP Cleanup (#05)]]`.
-- **File linking.** Files inside the vault use `[[internal links]]`. Files outside the vault use markdown links with `file://` URLs: `[Display Name](file:///absolute/path)`. Web URLs use standard markdown links: `[Display Name](https://...)`. Never use backtick-wrapped paths as pseudo-links — backticks are for inline code, not navigation.
-- **Don't over-preserve.** Once a working document's content has been captured in its permanent home, delete the working document. Don't keep to-do lists after the to-dos are done.
+- **Trashing** means moving to Obsidian's `.trash/` folder, not hard-deleting files.
+- **Project names include the hash.** The hash appears in both the folder name and the project note filename. Internal links use `[[Name HASH]]` format (e.g. `[[Acme App R7K2M]]`).
+- **File linking.** Files inside the vault use `[[internal links]]`. Files outside the vault use markdown links with `file://` URLs: `[Display Name](file:///absolute/path)`. Web URLs use standard markdown links: `[Display Name](https://...)`. Never use backtick-wrapped paths — backticks are for inline code, not navigation.
+- **Don't over-preserve.** Once a working document's content has been captured in its permanent home, trash the working document. Don't keep to-do lists after the to-dos are done.
 - **Don't backlink wiki pages from logs.** Logs link to things they're about (projects, tools, people), not to reference documentation.

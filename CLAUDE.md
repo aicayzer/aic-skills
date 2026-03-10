@@ -23,10 +23,10 @@ install.sh       # Symlinks all skills globally
 
 ## Rules for Writing Skills
 
-- **Reference the wiki, don't restate.** Skills point to `~/aic-vault/Wiki/` pages for conventions. If the convention changes, the wiki changes and the skill inherits it.
+- **Inline conventions where practical.** Skills should be self-contained enough to work without external references. Reference `~/aic-vault/CLAUDE.md` only when the full convention set is genuinely needed (e.g. audit, system).
 - **One workflow per skill.** Each skill does one thing. If it needs more than three conditional branches, it's doing too much.
 - **Self-contained.** Skills don't call other skills.
-- **UK English throughout.** No emojis. See `~/aic-vault/Wiki/Standards/Writing.md`.
+- **UK English throughout.** No emojis.
 - **Use `$ARGUMENTS`** as the placeholder for user input.
 - **Absolute paths.** Use `~/aic-vault/...` so skills work regardless of working directory.
 - **Test manually.** Use each skill in real work before considering it done.
