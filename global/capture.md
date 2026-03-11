@@ -13,7 +13,7 @@ $ARGUMENTS
    - **Project working material** — if the input relates to an active project (mentioned by name, or the current working context is a project), file it into that project's folder under `~/aic-vault/Projects/<project-folder>/`. Check existing project folders to find the right one.
    - **Something that sounds like a new project** — if the input describes a body of work with a defined outcome, suggest using `/project` to scaffold it. Don't create the project yourself — flag it and let the user decide.
    - **Freestanding reference material** — if it's polished, authored reference material not tied to a project or a moment, file it in `~/aic-vault/Library/`. This is rare.
-   - **Unclear** — if you genuinely can't determine where it belongs, file it in `~/aic-vault/Inbox/`. This is the zero-friction default.
+   - **Unclear** — if you genuinely can't determine where it belongs, file it in `~/aic-vault/Inbox/` with `type: note`. There is no `inbox` type. This is the zero-friction default.
 
 2. **Derive a filename.** Natural language with spaces, descriptive. The filename is the title — no H1 heading.
 
